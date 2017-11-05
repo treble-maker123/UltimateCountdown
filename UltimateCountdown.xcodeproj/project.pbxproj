@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E96A3E1FAF52C900FF8084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */; };
+		02E96A401FAF52C900FF8084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A3F1FAF52C900FF8084 /* ViewController.swift */; };
+		02E96A431FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A411FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld */; };
+		02E96A451FAF52C900FF8084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A441FAF52C900FF8084 /* Assets.xcassets */; };
+		02E96A481FAF52C900FF8084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A461FAF52C900FF8084 /* Main.storyboard */; };
+		02E96A541FAF52CA00FF8084 /* UltimateCountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */; };
+		02E96A5F1FAF52CA00FF8084 /* UltimateCountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A5E1FAF52CA00FF8084 /* UltimateCountdownUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02E96A501FAF52CA00FF8084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E96A321FAF52C900FF8084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E96A391FAF52C900FF8084;
+			remoteInfo = UltimateCountdown;
+		};
+		02E96A5B1FAF52CA00FF8084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E96A321FAF52C900FF8084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E96A391FAF52C900FF8084;
+			remoteInfo = UltimateCountdown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E96A3A1FAF52C900FF8084 /* UltimateCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02E96A3F1FAF52C900FF8084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02E96A421FAF52C900FF8084 /* UltimateCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateCountdown.xcdatamodel; sourceTree = "<group>"; };
+		02E96A441FAF52C900FF8084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02E96A471FAF52C900FF8084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02E96A491FAF52C900FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E96A4A1FAF52C900FF8084 /* UltimateCountdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimateCountdown.entitlements; sourceTree = "<group>"; };
+		02E96A4F1FAF52CA00FF8084 /* UltimateCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateCountdownTests.swift; sourceTree = "<group>"; };
+		02E96A551FAF52CA00FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E96A5A1FAF52CA00FF8084 /* UltimateCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E96A5E1FAF52CA00FF8084 /* UltimateCountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateCountdownUITests.swift; sourceTree = "<group>"; };
+		02E96A601FAF52CA00FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02E96A371FAF52C900FF8084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A4C1FAF52CA00FF8084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A571FAF52CA00FF8084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E96A311FAF52C900FF8084 = {
+			isa = PBXGroup;
+			children = (
+				02E96A3C1FAF52C900FF8084 /* UltimateCountdown */,
+				02E96A521FAF52CA00FF8084 /* UltimateCountdownTests */,
+				02E96A5D1FAF52CA00FF8084 /* UltimateCountdownUITests */,
+				02E96A3B1FAF52C900FF8084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02E96A3B1FAF52C900FF8084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A3A1FAF52C900FF8084 /* UltimateCountdown.app */,
+				02E96A4F1FAF52CA00FF8084 /* UltimateCountdownTests.xctest */,
+				02E96A5A1FAF52CA00FF8084 /* UltimateCountdownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02E96A3C1FAF52C900FF8084 /* UltimateCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */,
+				02E96A3F1FAF52C900FF8084 /* ViewController.swift */,
+				02E96A441FAF52C900FF8084 /* Assets.xcassets */,
+				02E96A461FAF52C900FF8084 /* Main.storyboard */,
+				02E96A491FAF52C900FF8084 /* Info.plist */,
+				02E96A4A1FAF52C900FF8084 /* UltimateCountdown.entitlements */,
+				02E96A411FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld */,
+			);
+			path = UltimateCountdown;
+			sourceTree = "<group>";
+		};
+		02E96A521FAF52CA00FF8084 /* UltimateCountdownTests */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */,
+				02E96A551FAF52CA00FF8084 /* Info.plist */,
+			);
+			path = UltimateCountdownTests;
+			sourceTree = "<group>";
+		};
+		02E96A5D1FAF52CA00FF8084 /* UltimateCountdownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A5E1FAF52CA00FF8084 /* UltimateCountdownUITests.swift */,
+				02E96A601FAF52CA00FF8084 /* Info.plist */,
+			);
+			path = UltimateCountdownUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02E96A391FAF52C900FF8084 /* UltimateCountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E96A631FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdown" */;
+			buildPhases = (
+				02E96A361FAF52C900FF8084 /* Sources */,
+				02E96A371FAF52C900FF8084 /* Frameworks */,
+				02E96A381FAF52C900FF8084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UltimateCountdown;
+			productName = UltimateCountdown;
+			productReference = 02E96A3A1FAF52C900FF8084 /* UltimateCountdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02E96A4E1FAF52CA00FF8084 /* UltimateCountdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E96A661FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdownTests" */;
+			buildPhases = (
+				02E96A4B1FAF52CA00FF8084 /* Sources */,
+				02E96A4C1FAF52CA00FF8084 /* Frameworks */,
+				02E96A4D1FAF52CA00FF8084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E96A511FAF52CA00FF8084 /* PBXTargetDependency */,
+			);
+			name = UltimateCountdownTests;
+			productName = UltimateCountdownTests;
+			productReference = 02E96A4F1FAF52CA00FF8084 /* UltimateCountdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02E96A591FAF52CA00FF8084 /* UltimateCountdownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E96A691FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdownUITests" */;
+			buildPhases = (
+				02E96A561FAF52CA00FF8084 /* Sources */,
+				02E96A571FAF52CA00FF8084 /* Frameworks */,
+				02E96A581FAF52CA00FF8084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E96A5C1FAF52CA00FF8084 /* PBXTargetDependency */,
+			);
+			name = UltimateCountdownUITests;
+			productName = UltimateCountdownUITests;
+			productReference = 02E96A5A1FAF52CA00FF8084 /* UltimateCountdownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02E96A321FAF52C900FF8084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Ziqiang Guan";
+				TargetAttributes = {
+					02E96A391FAF52C900FF8084 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					02E96A4E1FAF52CA00FF8084 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 02E96A391FAF52C900FF8084;
+					};
+					02E96A591FAF52CA00FF8084 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 02E96A391FAF52C900FF8084;
+					};
+				};
+			};
+			buildConfigurationList = 02E96A351FAF52C900FF8084 /* Build configuration list for PBXProject "UltimateCountdown" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02E96A311FAF52C900FF8084;
+			productRefGroup = 02E96A3B1FAF52C900FF8084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02E96A391FAF52C900FF8084 /* UltimateCountdown */,
+				02E96A4E1FAF52CA00FF8084 /* UltimateCountdownTests */,
+				02E96A591FAF52CA00FF8084 /* UltimateCountdownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02E96A381FAF52C900FF8084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E96A451FAF52C900FF8084 /* Assets.xcassets in Resources */,
+				02E96A481FAF52C900FF8084 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A4D1FAF52CA00FF8084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A581FAF52CA00FF8084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E96A361FAF52C900FF8084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E96A401FAF52C900FF8084 /* ViewController.swift in Sources */,
+				02E96A431FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld in Sources */,
+				02E96A3E1FAF52C900FF8084 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A4B1FAF52CA00FF8084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E96A541FAF52CA00FF8084 /* UltimateCountdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E96A561FAF52CA00FF8084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E96A5F1FAF52CA00FF8084 /* UltimateCountdownUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02E96A511FAF52CA00FF8084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E96A391FAF52C900FF8084 /* UltimateCountdown */;
+			targetProxy = 02E96A501FAF52CA00FF8084 /* PBXContainerItemProxy */;
+		};
+		02E96A5C1FAF52CA00FF8084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E96A391FAF52C900FF8084 /* UltimateCountdown */;
+			targetProxy = 02E96A5B1FAF52CA00FF8084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02E96A461FAF52C900FF8084 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E96A471FAF52C900FF8084 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02E96A611FAF52CA00FF8084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02E96A621FAF52CA00FF8084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		02E96A641FAF52CA00FF8084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UltimateCountdown/UltimateCountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		02E96A651FAF52CA00FF8084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UltimateCountdown/UltimateCountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		02E96A671FAF52CA00FF8084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltimateCountdown.app/Contents/MacOS/UltimateCountdown";
+			};
+			name = Debug;
+		};
+		02E96A681FAF52CA00FF8084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltimateCountdown.app/Contents/MacOS/UltimateCountdown";
+			};
+			name = Release;
+		};
+		02E96A6A1FAF52CA00FF8084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = UltimateCountdown;
+			};
+			name = Debug;
+		};
+		02E96A6B1FAF52CA00FF8084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UltimateCountdownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = UltimateCountdown;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E96A351FAF52C900FF8084 /* Build configuration list for PBXProject "UltimateCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E96A611FAF52CA00FF8084 /* Debug */,
+				02E96A621FAF52CA00FF8084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E96A631FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E96A641FAF52CA00FF8084 /* Debug */,
+				02E96A651FAF52CA00FF8084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E96A661FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E96A671FAF52CA00FF8084 /* Debug */,
+				02E96A681FAF52CA00FF8084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E96A691FAF52CA00FF8084 /* Build configuration list for PBXNativeTarget "UltimateCountdownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E96A6A1FAF52CA00FF8084 /* Debug */,
+				02E96A6B1FAF52CA00FF8084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02E96A411FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02E96A421FAF52C900FF8084 /* UltimateCountdown.xcdatamodel */,
+			);
+			currentVersion = 02E96A421FAF52C900FF8084 /* UltimateCountdown.xcdatamodel */;
+			path = UltimateCountdown.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02E96A321FAF52C900FF8084 /* Project object */;
+}
