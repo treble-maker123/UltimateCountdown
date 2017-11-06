@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		02E96A3E1FAF52C900FF8084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */; };
-		02E96A401FAF52C900FF8084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A3F1FAF52C900FF8084 /* ViewController.swift */; };
+		02E96A401FAF52C900FF8084 /* CDListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A3F1FAF52C900FF8084 /* CDListViewController.swift */; };
 		02E96A431FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A411FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld */; };
 		02E96A451FAF52C900FF8084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A441FAF52C900FF8084 /* Assets.xcassets */; };
 		02E96A481FAF52C900FF8084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A461FAF52C900FF8084 /* Main.storyboard */; };
-		02E96A541FAF52CA00FF8084 /* UltimateCountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */; };
 		02E96A5F1FAF52CA00FF8084 /* UltimateCountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A5E1FAF52CA00FF8084 /* UltimateCountdownUITests.swift */; };
+		02E96A731FAF569800FF8084 /* CDCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A711FAF569800FF8084 /* CDCollectionViewItem.swift */; };
+		02E96A741FAF569800FF8084 /* CDCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A721FAF569800FF8084 /* CDCollectionViewItem.xib */; };
+		02E96A7F1FAF671400FF8084 /* CDDigitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A7E1FAF671400FF8084 /* CDDigitView.swift */; };
+		02E96A811FAF672800FF8084 /* CDDigitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E96A801FAF672800FF8084 /* CDDigitView.xib */; };
+		02E96A8B1FAFCFEC00FF8084 /* CDItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A8A1FAFCFEC00FF8084 /* CDItemsManager.swift */; };
+		02E96A8D1FAFD07A00FF8084 /* CDItemsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A8C1FAFD07A00FF8084 /* CDItemsManagerTests.swift */; };
+		02E96A8F1FAFD8F700FF8084 /* CDEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E96A8E1FAFD8F700FF8084 /* CDEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +42,24 @@
 /* Begin PBXFileReference section */
 		02E96A3A1FAF52C900FF8084 /* UltimateCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02E96A3F1FAF52C900FF8084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02E96A3F1FAF52C900FF8084 /* CDListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDListViewController.swift; sourceTree = "<group>"; };
 		02E96A421FAF52C900FF8084 /* UltimateCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateCountdown.xcdatamodel; sourceTree = "<group>"; };
 		02E96A441FAF52C900FF8084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E96A471FAF52C900FF8084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02E96A491FAF52C900FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E96A4A1FAF52C900FF8084 /* UltimateCountdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimateCountdown.entitlements; sourceTree = "<group>"; };
 		02E96A4F1FAF52CA00FF8084 /* UltimateCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateCountdownTests.swift; sourceTree = "<group>"; };
 		02E96A551FAF52CA00FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E96A5A1FAF52CA00FF8084 /* UltimateCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E96A5E1FAF52CA00FF8084 /* UltimateCountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateCountdownUITests.swift; sourceTree = "<group>"; };
 		02E96A601FAF52CA00FF8084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E96A711FAF569800FF8084 /* CDCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCollectionViewItem.swift; sourceTree = "<group>"; };
+		02E96A721FAF569800FF8084 /* CDCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDCollectionViewItem.xib; sourceTree = "<group>"; };
+		02E96A7E1FAF671400FF8084 /* CDDigitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDDigitView.swift; sourceTree = "<group>"; };
+		02E96A801FAF672800FF8084 /* CDDigitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDDigitView.xib; sourceTree = "<group>"; };
+		02E96A8A1FAFCFEC00FF8084 /* CDItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDItemsManager.swift; sourceTree = "<group>"; };
+		02E96A8C1FAFD07A00FF8084 /* CDItemsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDItemsManagerTests.swift; sourceTree = "<group>"; };
+		02E96A8E1FAFD8F700FF8084 /* CDEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,10 @@
 		02E96A3C1FAF52C900FF8084 /* UltimateCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				02E96A791FAF623E00FF8084 /* Controllers */,
+				02E96A6C1FAF534D00FF8084 /* Views */,
+				02E96A891FAFCFC900FF8084 /* SupportFiles */,
 				02E96A3D1FAF52C900FF8084 /* AppDelegate.swift */,
-				02E96A3F1FAF52C900FF8084 /* ViewController.swift */,
 				02E96A441FAF52C900FF8084 /* Assets.xcassets */,
 				02E96A461FAF52C900FF8084 /* Main.storyboard */,
 				02E96A491FAF52C900FF8084 /* Info.plist */,
@@ -112,7 +126,7 @@
 		02E96A521FAF52CA00FF8084 /* UltimateCountdownTests */ = {
 			isa = PBXGroup;
 			children = (
-				02E96A531FAF52CA00FF8084 /* UltimateCountdownTests.swift */,
+				02E96A8C1FAFD07A00FF8084 /* CDItemsManagerTests.swift */,
 				02E96A551FAF52CA00FF8084 /* Info.plist */,
 			);
 			path = UltimateCountdownTests;
@@ -125,6 +139,50 @@
 				02E96A601FAF52CA00FF8084 /* Info.plist */,
 			);
 			path = UltimateCountdownUITests;
+			sourceTree = "<group>";
+		};
+		02E96A6C1FAF534D00FF8084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A771FAF621A00FF8084 /* DigitView */,
+				02E96A781FAF622200FF8084 /* CDCollectionViewItem */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02E96A771FAF621A00FF8084 /* DigitView */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A7E1FAF671400FF8084 /* CDDigitView.swift */,
+				02E96A801FAF672800FF8084 /* CDDigitView.xib */,
+			);
+			path = DigitView;
+			sourceTree = "<group>";
+		};
+		02E96A781FAF622200FF8084 /* CDCollectionViewItem */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A711FAF569800FF8084 /* CDCollectionViewItem.swift */,
+				02E96A721FAF569800FF8084 /* CDCollectionViewItem.xib */,
+			);
+			path = CDCollectionViewItem;
+			sourceTree = "<group>";
+		};
+		02E96A791FAF623E00FF8084 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A3F1FAF52C900FF8084 /* CDListViewController.swift */,
+				02E96A8E1FAFD8F700FF8084 /* CDEditViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		02E96A891FAFCFC900FF8084 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				02E96A8A1FAFCFEC00FF8084 /* CDItemsManager.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +257,7 @@
 					};
 					02E96A4E1FAF52CA00FF8084 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 02E96A391FAF52C900FF8084;
 					};
@@ -235,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E96A451FAF52C900FF8084 /* Assets.xcassets in Resources */,
+				02E96A811FAF672800FF8084 /* CDDigitView.xib in Resources */,
 				02E96A481FAF52C900FF8084 /* Main.storyboard in Resources */,
+				02E96A741FAF569800FF8084 /* CDCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E96A401FAF52C900FF8084 /* ViewController.swift in Sources */,
+				02E96A7F1FAF671400FF8084 /* CDDigitView.swift in Sources */,
+				02E96A401FAF52C900FF8084 /* CDListViewController.swift in Sources */,
 				02E96A431FAF52C900FF8084 /* UltimateCountdown.xcdatamodeld in Sources */,
+				02E96A8B1FAFCFEC00FF8084 /* CDItemsManager.swift in Sources */,
+				02E96A8F1FAFD8F700FF8084 /* CDEditViewController.swift in Sources */,
+				02E96A731FAF569800FF8084 /* CDCollectionViewItem.swift in Sources */,
 				02E96A3E1FAF52C900FF8084 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E96A541FAF52CA00FF8084 /* UltimateCountdownTests.swift in Sources */,
+				02E96A8D1FAFD07A00FF8084 /* CDItemsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +515,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UltimateCountdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ziqiangguan.com.UltimateCountdownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltimateCountdown.app/Contents/MacOS/UltimateCountdown";
 			};
@@ -466,6 +533,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UltimateCountdownTests/Info.plist;
