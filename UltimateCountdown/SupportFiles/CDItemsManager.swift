@@ -15,7 +15,7 @@ class CDItemsManager {
     
     var onItemsChanged: (_ action: ManagerAction) -> Void = {(action) in }
     var onItemAdded: (_ item: NSManagedObject, _ index: Int) -> Void = {(item, index) in }
-    var onItemRemoved: () -> Void = {() in }
+    var onItemRemoved: (_ index: Int) -> Void = {(index) in }
     var onItemUpdated: (_ updatedItem: NSManagedObject) -> Void = {(item) in }
     var onItemsPurged: () -> Void = {() in }
     
@@ -41,8 +41,8 @@ class CDItemsManager {
         do {
             try context.save()
             self.items.append(item)
-            self.onItemsChanged(.add)
             self.onItemAdded(item, self.items.index(of: item)!)
+            self.onItemsChanged(.add)
             return true
         } catch let error as NSError {
             print("Could not save countdown items. \(error), \(error.userInfo)")
@@ -58,9 +58,10 @@ class CDItemsManager {
         context.delete(object)
         do {
             try context.save()
-            self.items.remove(at: self.items.index(of: object)!)
+            let index: Int = self.items.index(of: object)!
+            self.items.remove(at: index)
+            self.onItemRemoved(index)
             self.onItemsChanged(.remove)
-            self.onItemRemoved()
             return true
         } catch let error as NSError {
             print("Could not remove item. \(error), \(error.userInfo)")
@@ -76,8 +77,8 @@ class CDItemsManager {
         object.setValue(name, forKey: "name")
         do {
             try context.save()
-            self.onItemsChanged(.update)
             self.onItemUpdated(object)
+            self.onItemsChanged(.update)
             return true
         } catch let error as NSError {
             print("Could not update item. \(error), \(error.userInfo)")
@@ -93,8 +94,8 @@ class CDItemsManager {
         object.setValue(endDate, forKey: "endDate")
         do {
             try context.save()
-            self.onItemsChanged(.update)
             self.onItemUpdated(object)
+            self.onItemsChanged(.update)
             return true
         } catch let error as NSError {
             print("Could not update item. \(error), \(error.userInfo)")
@@ -117,8 +118,8 @@ class CDItemsManager {
                 context.delete(item)
             }
             try context.save()
-            self.onItemsChanged(.purge)
             self.onItemsPurged()
+            self.onItemsChanged(.purge)
             self.items = []
             return true
         } catch let error as NSError {

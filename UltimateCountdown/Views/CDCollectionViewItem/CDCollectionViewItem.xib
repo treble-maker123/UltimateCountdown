@@ -100,7 +100,7 @@
                     <rect key="frame" x="42" y="0.0" width="37" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="DAYS" id="f8G-j7-gyt">
-                        <font key="font" metaFont="system" size="11"/>
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -109,7 +109,7 @@
                     <rect key="frame" x="127" y="0.0" width="48" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="HR" id="yzH-QD-V3r">
-                        <font key="font" metaFont="system" size="11"/>
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -118,7 +118,7 @@
                     <rect key="frame" x="199" y="0.0" width="29" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="MIN" id="mDN-uo-9fc">
-                        <font key="font" metaFont="system" size="11"/>
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -127,16 +127,7 @@
                     <rect key="frame" x="264" y="0.0" width="29" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SEC" id="ugj-Wd-wH3">
-                        <font key="font" metaFont="system" size="11"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-ei-vqT">
-                    <rect key="frame" x="314" y="17" width="53" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="UNTIL" id="wvB-rF-ELS">
-                        <font key="font" metaFont="system" size="16"/>
+                        <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -148,6 +139,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="closeBtnPressed:" target="-2" id="GoK-v7-SFm"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1w-iN-a2b">
                     <rect key="frame" x="505" y="55" width="28" height="15"/>
@@ -156,12 +150,24 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="editBtnPressed:" target="-2" id="7qy-KI-V3b"/>
+                    </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psW-el-Uja">
-                    <rect key="frame" x="371" y="11" width="211" height="34"/>
+                    <rect key="frame" x="377" y="11" width="205" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Something really really bad happens? Maybe..." id="tkl-rz-23f">
                         <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-ei-vqT">
+                    <rect key="frame" x="320" y="17" width="53" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="UNTIL" id="wvB-rF-ELS">
+                        <font key="font" metaFont="system" size="16"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

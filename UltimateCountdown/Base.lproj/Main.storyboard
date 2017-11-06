@@ -132,11 +132,11 @@
                                     <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="vBA-96-QBl">
-                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <rect key="frame" x="0.0" y="-16" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="nBr-Vb-N0U">
-                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <rect key="frame" x="-16" y="0.0" width="16" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -156,7 +156,8 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="collection" destination="SAZ-rp-56Q" id="a2M-rG-cDN"/>
+                        <outlet property="collection" destination="SAZ-rp-56Q" id="tw5-qY-Lh5"/>
+                        <segue destination="ExP-1P-eTD" kind="popover" identifier="updateItem" popoverBehavior="t" preferredEdge="maxY" id="gXI-qJ-CzT"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -166,7 +167,7 @@
         <!--Edit View Controller-->
         <scene sceneID="ATP-qF-bCw">
             <objects>
-                <viewController id="ExP-1P-eTD" customClass="CDEditViewController" customModule="UltimateCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editViewVC" id="ExP-1P-eTD" customClass="CDEditViewController" customModule="UltimateCountdown" customModuleProvider="target" sceneMemberID="viewController">
                     <customView key="view" id="G2Y-SM-vh5">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="230"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,7 +176,7 @@
                                 <rect key="frame" x="20" y="120" width="260" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="sTE-PV-S53">
-                                    <font key="font" metaFont="system" size="16"/>
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -270,4 +271,7 @@ DQ
             <point key="canvasLocation" x="664" y="953"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gXI-qJ-CzT"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -30,9 +30,15 @@ class CDEditViewController: NSViewController {
             self.datePicker.minDate = Date()
             self.currentChar.stringValue = String(self.textField.stringValue.count)
             self.maxChar.stringValue = String(self._maxLength)
-            self.confirmBtn.stringValue = "Add"
+            self.confirmBtn.title = "Add"
         } else {
-            self.confirmBtn.stringValue = "Update"
+            if let item: NSManagedObject = self.object {
+                self.textField.stringValue = item.value(forKey: "name") as! String
+                self.datePicker.dateValue = item.value(forKey: "endDate") as! Date
+                self.currentChar.stringValue = String(self.textField.stringValue.count)
+                self.maxChar.stringValue = String(self._maxLength)
+                self.confirmBtn.title = "Update"
+            }
         }
     }
     
@@ -41,10 +47,23 @@ class CDEditViewController: NSViewController {
             let name: String = self.textField.stringValue
             let endDate: Date = self.datePicker.dateValue
             self._manager.addItem(name: name, endDate: endDate)
-            self.dismissViewController(self)
         } else {
-            
+            if let item: NSManagedObject = self.object {
+                let oldName = item.value(forKey: "name") as! String
+                let oldDate = item.value(forKey: "endDate") as! Date
+                let newName = self.textField.stringValue
+                let newDate = self.datePicker.dateValue
+                
+                if oldName != newName {
+                    self._manager.updateItem(name: newName, object: item)
+                }
+                
+                if oldDate != newDate {
+                    self._manager.updateItem(endDate: newDate, object: item)
+                }
+            }
         }
+        self.dismissViewController(self)
     }
 }
 

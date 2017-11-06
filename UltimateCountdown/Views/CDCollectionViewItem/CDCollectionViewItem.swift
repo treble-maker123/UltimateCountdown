@@ -27,11 +27,20 @@ class CDCollectionViewItem: NSCollectionViewItem {
     
     @IBOutlet var contentView: NSView!
     
+    weak var currentListVC: CDListViewController?
+    
+    var item: NSManagedObject? {
+        get { return self._item }
+    }
+    
     // MARK: - Private properties
+    
+    private let _updateItemSegueId = NSStoryboardSegue.Identifier(rawValue: "updateItem")
     
     private var _item: NSManagedObject?
     private var _timer: Timer?
     private var _displayTime: DisplayTime = DisplayTime()
+    private var _manager: CDItemsManager = CDItemsManager.shared
     
     // MARK: - Public functions
     
@@ -54,7 +63,6 @@ class CDCollectionViewItem: NSCollectionViewItem {
         self.dDay.previous = self.tDay
         self.tDay.previous = self.hDay
         self.hDay.previous = self.thDay
-        
 
         /*
          The digit of hour should be (0, 3) if the tenth number is 2. Hour 23, Hour 22etc.
@@ -70,8 +78,9 @@ class CDCollectionViewItem: NSCollectionViewItem {
     /**
      Set this CollectionViewItem to a NSManagedObject of type CountdownItem. The properties from the NSManagedObject will be read and displayed in this view. A timer will be triggered as well.
      */
-    func setItem(item: NSManagedObject) {
+    func setItem(item: NSManagedObject, currentVC: CDListViewController) {
         self._item = item
+        self.currentListVC = currentVC
         
         // setting name
         guard let name: String = item.value(forKeyPath: "name") as? String else {
@@ -87,6 +96,7 @@ class CDCollectionViewItem: NSCollectionViewItem {
         }
         self._displayTime = DisplayTime(interval: Int(date.timeIntervalSinceNow))
         self.updateViewTime(time: self._displayTime)
+        self.stopTimer() // deinit isn't called when reloadData() is called on NSCollectionView, so have to reset timer here to fix strange behavior
         self.startTimer()
     }
     
@@ -103,6 +113,28 @@ class CDCollectionViewItem: NSCollectionViewItem {
     
     func stopTimer() {
         if self._timer != nil { self._timer!.invalidate() }
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func editBtnPressed(_ sender: Any) {
+        self.currentListVC?.performSegue(withIdentifier: self._updateItemSegueId, sender: self)
+    }
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        let alert: NSAlert = NSAlert()
+        alert.messageText = "Deleting Event or Task"
+        alert.informativeText = "Are you sure you would like to delete \"\(self.nameField.stringValue)\"?"
+        alert.addButton(withTitle: "OK")
+        alert.addButton(withTitle: "Cancel")
+        alert.alertStyle = .warning
+        
+        alert.beginSheetModal(for: NSApp.windows[0], completionHandler: {
+            (response: NSApplication.ModalResponse) in
+            if response == NSApplication.ModalResponse.alertFirstButtonReturn {
+                self._manager.removeItem(object: self._item!)
+            }
+        })
     }
     
     // MARK: - Private functions
